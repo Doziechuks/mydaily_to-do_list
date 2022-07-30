@@ -25,6 +25,9 @@ list.forEach((task) => {
 
 function toDoList(task) {
   let newTask = inputElement.value;
+  if (newTask.trim() === "") {
+    return;
+  }
   if (task) {
     newTask = task.name;
   }
